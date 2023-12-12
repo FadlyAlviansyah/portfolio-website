@@ -1,0 +1,139 @@
+@import "../../app.scss";
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio .wrapper{
+  height: 100%;
+  width: 85%;
+}
+
+.portfolio .header {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  border-bottom: 3px solid white;
+  padding: 20px;
+
+  @include mobile {
+    margin-top: 50px;
+  }
+  
+  h1{
+    font-size: 40px;
+    color: orange;
+  }
+}
+
+.portfolio .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    // @include mobile {
+    //   flex-direction: column;
+    // }
+
+    .card{
+      border: 2px solid grey;
+      position: relative;
+
+      .imageContainer{
+        width: 100%;
+        height: 250px;
+
+        img{
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+        }
+      }
+
+      .textContainer {
+        cursor: pointer;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.6s;
+        gap: 10px;
+
+        // @include mobile {
+        //   transform: none !important;
+        //   padding: 10px;
+        //   align-items: center;
+        //   text-align: center;
+        // }
+
+        h2 {
+          width: 100%;
+          text-align: center;
+          font-size: 30px;
+
+          @include mobile {
+            font-size: 26px;
+          }
+        }
+
+        p {
+          color: gray;
+          font-size: 20px;
+          text-align: start;
+
+          @include mobile {
+            font-size: 14px;
+          }
+        }
+
+        a {
+          img{
+            border: none;
+            padding: 5px;
+            background-color: orange;
+            width: 30px;
+            border-radius: 4px;
+          }
+        }
+      }
+
+      .textContainer:hover{
+        opacity: 1;
+      }
+
+      .textContainer * {
+        transform: translateY(25px);
+        transition: 0.6s;
+      }
+
+      .textContainer:hover * {
+        transform: translateY(0px);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .portfolio .row{
+    // background-color: red;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}

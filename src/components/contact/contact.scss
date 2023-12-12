@@ -1,0 +1,190 @@
+@import "../../app.scss";
+
+.contact {
+  height: 100vh;
+  width: 100%;
+  // margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  gap: 50px;
+
+  @include mobile {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .container{
+    width: 85%;
+    display: flex;
+    gap: 100px;
+
+    .textContainer {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  
+      h1 {
+        font-size: 30px;
+        border-bottom: 3px solid white;
+        color: orange;
+        @include mobile {
+          font-size: 24px;
+        }
+      }
+
+      .row:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .row:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .row:nth-child(3) {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @include mobile {
+          justify-content: center;
+        }
+      }
+  
+      .item{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+  
+        i{
+          font-size: 30px;
+          padding: 5px;
+          border-radius: 50%;
+          transition: .3s;
+
+          @include mobile {
+            font-size: 26px;
+          }
+        }
+
+        i:hover{
+          color: #111132;
+          transform: scale(1.2);
+          background: white;
+        }
+  
+        span {
+          font-size: 1.4rem;
+          font-weight: 500;
+
+          @include mobile {
+            font-size: 16px;
+          }
+        }
+      }
+  
+    }
+  
+    .formContainer {
+      width: 40%;
+
+      // @include mobile {
+      //   gap: 20px;
+      //   text-align: center;
+      //   align-items: center;
+      //   margin-top: 70px;
+      // }
+      
+      @include mobile {
+        // padding: 50px;
+        width: 100%;
+      }
+  
+      h2 {
+        margin-bottom: 20px;
+        border-bottom: 3px solid white;
+        font-size: 30px;
+        color: orange;
+        @include mobile {
+          font-size: 24px;
+        }
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+  
+        input,
+        textarea {
+          padding: 20px;
+          background-color: transparent;
+          border: 1px solid white;
+          color: white;
+  
+          @include mobile {
+            padding: 10px;
+          }
+        }
+
+        textarea{
+          @include mobile {
+            height: 60px;
+          }
+        }
+  
+        button {
+          padding: 15px;
+          border: none;
+          background-color: orange;
+          font-size: 16px;
+          cursor: pointer;
+          font-weight: 500;
+          @include mobile {
+            padding: 10px;
+          }
+        }
+      }
+
+      .alert {
+        width: 100%;
+        margin-top: -10px;
+
+        .success{
+          text-align: center;
+          font-size: 18px;
+          color: green;
+        }
+
+        .error{
+          text-align: center;
+          font-size: 18px;
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container{
+    flex-direction: column;
+    gap: 20px !important;
+  }
+
+  .contact .textContainer{
+    width: 100% !important;
+  }
+
+  .contact .formContainer{
+    width: 100% !important;
+  }
+}
