@@ -81,7 +81,7 @@ const Contact = () => {
             </motion.div>
           </div>
           <div className="row">
-            <motion.a href="https://www.instagram.com/fadly.alv/" target="_blank" className="item" variants={socialVariants}>
+            <motion.a href="https://www.instagram.com/fadly.alv" target="_blank" className="item" variants={socialVariants}>
               <i className='bx bxl-instagram'></i>
             </motion.a>
             <motion.a href="https://www.linkedin.com/in/muhamad-fadly-alviansyah-31a7412a4/" target="_blank" className="item" variants={socialVariants}>

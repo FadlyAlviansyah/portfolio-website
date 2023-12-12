@@ -5,21 +5,21 @@ import { motion, useInView } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Mosque Website",
+    img: "/project-masjid.png",
+    desc: "A mosque website where a feature is available .on the website for donations for the construction of the Wikrama Bogor Vocational High School mosque. I used PHP, HTML, and CSS programming languages to create this project.",
   },
   {
     id: 2,
-    title: "Next.js Blog",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Pharmacy Application",
+    img: "/project-apotek.png",
+    desc: "This website was created to facilitate pharmacists. There are several features available, such as CRUD, login, register, export Excel, print PDF, and many more. This project was created using the Laravel framework for the backend and Bootstrap for the frontend.",
   },
   {
     id: 3,
-    title: "Vanilla JS App",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Blog App",
+    img: "/project-blog.png",
+    desc: "This project has several features, such as CRUD, login, dashboard, and more. This project was created using the Laravel framework for the backend and Bootstrap for the frontend.",
   },
   // {
   //   id: 4,
