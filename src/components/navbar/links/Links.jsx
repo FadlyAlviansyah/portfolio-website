@@ -27,6 +27,17 @@ const itemVariants = {
 const Links = () => {
   const items = ["home", "about", "portfolio", "contact"];
 
+  const handleScroll = (e, targetId) => {
+    e.preventDefault(); // Mencegah perilaku default anchor
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <motion.div className="links" variants={variants}>
       {items.map((item) => (
@@ -36,6 +47,7 @@ const Links = () => {
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
+          onClick={(e) => handleScroll(e, `#${item}`)}
         >
           {item}
         </motion.a>

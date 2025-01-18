@@ -5,9 +5,9 @@ import { motion, useInView } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "Mosque Website",
-    img: "/project-masjid.png",
-    desc: "A mosque website where a feature is available .on the website for donations for the construction of the Wikrama Bogor Vocational High School mosque. I used PHP, HTML, and CSS programming languages to create this project.",
+    title: "Broker",
+    img: "/project-broker.png",
+    desc: "The Broker POS System is a comprehensive Point of Sale (POS) application designed to streamline and enhance transaction management for businesses. This project is built with a robust Laravel backend and a dynamic React front-end, ensuring optimal performance, scalability, and a seamless user experience.",
   },
   {
     id: 2,
@@ -21,11 +21,23 @@ const items = [
     img: "/project-blog.png",
     desc: "This project has several features, such as CRUD, login, dashboard, and more. This project was created using the Laravel framework for the backend and Bootstrap for the frontend.",
   },
+  {
+    id: 4,
+    title: "Mosque Website",
+    img: "/project-masjid.png",
+    desc: "A mosque website where a feature is available .on the website for donations for the construction of the Wikrama Bogor Vocational High School mosque. I used PHP, HTML, and CSS programming languages to create this project.",
+  },
   // {
-  //   id: 4,
-  //   title: "Music App",
-  //   img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+  //   id: 5,
+  //   title: "Pharmacy Application",
+  //   img: "/project-apotek.png",
+  //   desc: "This website was created to facilitate pharmacists. There are several features available, such as CRUD, login, register, export Excel, print PDF, and many more. This project was created using the Laravel framework for the backend and Bootstrap for the frontend.",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Blog App",
+  //   img: "/project-blog.png",
+  //   desc: "This project has several features, such as CRUD, login, dashboard, and more. This project was created using the Laravel framework for the backend and Bootstrap for the frontend.",
   // },
 ];
 

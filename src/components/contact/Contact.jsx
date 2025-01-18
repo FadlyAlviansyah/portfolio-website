@@ -69,7 +69,7 @@ const Contact = () => {
           <div className="row">
             <motion.div className="item" variants={variants}>
               <i className='bx bx-map'></i>
-              <span>Bogor, Indonesian</span>
+              <span>Bogor, Indonesia</span>
             </motion.div>
             <motion.div className="item" variants={variants}>
               <i className='bx bx-envelope'></i>
@@ -86,9 +86,6 @@ const Contact = () => {
             </motion.a>
             <motion.a href="https://www.linkedin.com/in/muhamad-fadly-alviansyah-31a7412a4/" target="_blank" className="item" variants={socialVariants}>
               <i className='bx bxl-linkedin'></i>
-            </motion.a>
-            <motion.a href="https://twitter.com/fadly_alv" target="_blank" className="item" variants={socialVariants}>
-              <i className='bx bxl-twitter'></i>
             </motion.a>
           </div>
         </motion.div>

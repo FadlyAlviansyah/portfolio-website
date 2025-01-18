@@ -18,23 +18,20 @@
     justify-content: center;
     // background-color: white;
     color: white;
-
+    
     @include mobile {
       display: flex;
     }
     
     .bg {
+      background: rgba(17, 17, 50, 0.4);
       z-index: 999;
       position: fixed;
       top: 0;
       left: 0;
       bottom: 0;
       width: 400px;
-      // background: ;
-      // filter: blur(10px);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-  
+      
       @include mobile {
         width: 200px;
       }
@@ -76,6 +73,13 @@
   }
 
   .wrapper {
+    // background-color: red;
+    height: 80px;
+    backdrop-filter: blur(0.4rem);
+    background: rgba(17, 17, 50, 0.4);
+  }
+
+  .container {
     width: 85%;
     margin: auto;
     display: flex;

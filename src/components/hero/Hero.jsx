@@ -37,14 +37,6 @@ const Hero = () => {
             </motion.button>
           </motion.div>
         </motion.div>
-        <motion.div
-          className="imageContainer"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 0.5, scale: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <img src="/mask2.png" alt="Muhamad Fadly Alviansyah" />
-        </motion.div>
       </div>
     </div>
   );

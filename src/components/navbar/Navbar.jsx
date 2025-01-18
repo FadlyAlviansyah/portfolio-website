@@ -49,31 +49,33 @@ const Navbar = () => {
         <ToggleButton setOpen={setOpen} />
       </motion.div>
       <div className="wrapper">
-        <motion.span
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <a href="#home">Fadly</a>
-        </motion.span>
-        <motion.div
-        className="nav-links"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <Links />
-        </motion.div>
-        <motion.div
-          className="social"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <a href="https://github.com/FadlyAlviansyah" target="_blank" rel="noreferrer">
-            <i className='bx bxl-github'></i>
-          </a>
-        </motion.div>
+        <div className="container">
+          <motion.span
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <a href="#home">Fadly</a>
+          </motion.span>
+          <motion.div
+          className="nav-links"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Links />
+          </motion.div>
+          <motion.div
+            className="social"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <a href="https://github.com/FadlyAlviansyah" target="_blank" rel="noreferrer">
+              <i className='bx bxl-github'></i>
+            </a>
+          </motion.div>
+        </div>
       </div>
     </div>
   );
